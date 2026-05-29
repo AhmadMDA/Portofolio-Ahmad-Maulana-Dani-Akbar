@@ -24,18 +24,13 @@
   color: var(--text);
 }
 
-.logo-badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo-image {
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, #000000 0%, #333333 100%);
-  color: white;
   border-radius: 8px;
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  object-fit: contain;
+  background: white;
+  padding: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 

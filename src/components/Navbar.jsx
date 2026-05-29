@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
+import logo from '../logo.png';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <div className="logo-badge">AMDA</div>
+          <img src={logo} alt="Logo" className="logo-image" />
           <h2>Web Developer</h2>
         </div>
 
