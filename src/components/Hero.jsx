@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import './Hero.css';
 
 export default function Hero() {
+  const fullCode = `function buildAwesome() {\n    return (\n        <Awesome\n             without="ME"\n                status="incomplete"\n                />\n            );\n        }\n// Can't spell AWESOME without ME`;
+  const [displayedCode, setDisplayedCode] = useState('');
+
+  useEffect(() => {
+    let i = 0;
+    let timeoutId = null;
+
+    const tick = () => {
+      if (i <= fullCode.length) {
+        setDisplayedCode(fullCode.slice(0, i));
+        i += 1;
+        timeoutId = setTimeout(tick, 30);
+      } else {
+        // pause at end then restart
+        timeoutId = setTimeout(() => {
+          i = 0;
+          setDisplayedCode('');
+          tick();
+        }, 1200);
+      }
+    };
+
+    tick();
+    return () => clearTimeout(timeoutId);
+  }, []);
+
   return (
     <section id="home" className="hero">
       <div className="hero-background"></div>
@@ -29,17 +55,7 @@ export default function Hero() {
               <span className="dot yellow"></span>
               <span className="dot green"></span>
             </div>
-            <pre className="code-content">
-            {`function buildAwesome() {
-    return (
-        <Awesome
-             without="ME"
-                status="incomplete"
-                />
-            );
-        }
-// Can't spell AWESOME without ME`}
-            </pre>
+            <pre className="code-content">{displayedCode}<span className="cursor" /></pre>
           </div>
         </div>
       </div>
