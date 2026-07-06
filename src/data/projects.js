@@ -82,5 +82,35 @@ image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format
       "Financial analytics"
     ],
     techs: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript", "Bootstrap"]
+  },
+    {
+    id: 6,
+    title: "Nova Social - Web3 Social App",
+    description: "Nova Social is a premium Web3 social app inspired by Twitter/X, Threads, Farcaster, and Lens Protocol. It combines wallet-based authentication, social interactions, NFT profiles, and IPFS media delivery with a polished startup-grade UI..",
+    image: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/AhmadMDA/Web3-Project",
+    live: "#",
+    features: [
+    "Wallet authentication",
+    "Create and share posts",
+    "Like and comment system",
+    "Follow and unfollow users",
+    "NFT profile avatar",
+    "IPFS media storage"
+    ],
+    techs: [  "React",
+  "Vite",
+  "Tailwind CSS",
+  "JavaScript",
+  "Framer Motion",
+  "React Router",
+  "Solidity",
+  "Hardhat",
+  "OpenZeppelin",
+  "Ethers.js",
+  "Wagmi",
+  "Viem",
+  "MetaMask",
+  "Pinata IPFS"]
   }
 ];
