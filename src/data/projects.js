@@ -112,5 +112,22 @@ image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format
   "Viem",
   "MetaMask",
   "Pinata IPFS"]
+  },
+  {
+    id: 7,
+    title: "Madura Mart - E-Commerce Store",
+    description: "A modern e-commerce storefront for local products with product catalog, shopping cart, checkout flow, wishlist, AI recommendations, and role-based access for customer and admin users.",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80",
+    github: "#",
+    live: "http://localhost:5173",
+    features: [
+      "Product catalog and filters",
+      "Shopping cart and checkout flow",
+      "Wishlist and order tracking",
+      "Admin management dashboard",
+      "AI-powered recommendations",
+      "Role-based authentication flow"
+    ],
+    techs: ["React", "Vite", "JavaScript", "Tailwind CSS", "Supabase", "React Router", "Lucide React"]
   }
 ];
