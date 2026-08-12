@@ -5,7 +5,7 @@ export const projectsData = [
     description: "A comprehensive property management and booking system for residential properties with real-time availability tracking and secure payment processing.",
     image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop",
     github: "https://github.com/yourusername/AQSO-RESIDENCE",
-    live: "https://aqso-residence.vercel.app",
+    live: "http://localhost/AQSO-RESIDENCE-main",
     features: [
       "Property listing and booking system",
       "User authentication & profiles",
@@ -22,7 +22,7 @@ export const projectsData = [
     description: "A modern food ordering and management system for cafeterias with menu management, order tracking, and sales analytics.",
     image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=300&fit=crop",
     github: "https://github.com/yourusername/E-Kantin",
-    live: "https://e-kantin.test",
+    live: "http://localhost/E_Kantin-main/public",
     features: [
       "Menu management system",
       "Shopping cart functionality",
@@ -38,7 +38,7 @@ export const projectsData = [
     title: "Kos Management - Boarding House System",
     description: "An end-to-end boarding house management system with tenant management, payment tracking, and facility management.",
    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-    live: "#",
+    live: "http://localhost/manajemen-proyek-SI-Rumah-kos-main",
     features: [
       "Tenant management",
       "Payment tracking system",
@@ -55,7 +55,7 @@ export const projectsData = [
     description: "A comprehensive online student registration system for new admissions with automated evaluation and document management.",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
     github: "https://github.com/yourusername/PMB-STIMATA",
-    live: "https://pmb-stimata.test",
+    live: "http://localhost/pmb-stimata-main/public",
     features: [
       "Student registration forms",
       "Document upload & validation",
@@ -72,7 +72,7 @@ export const projectsData = [
     description: "A livestock management system for tracking animal health, breeding records, and farm productivity metrics.",
 image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format&fit=crop&w=800&q=80",
     github: "https://github.com/yourusername/Workshop-Peternakan",
-    live: "#",
+    live: "http://localhost/workshop-Peternakan-main",
     features: [
       "Animal record tracking",
       "Health monitoring",
@@ -89,7 +89,7 @@ image: "https://images.unsplash.com/photo-1517022812141-23620dba5c23?auto=format
     description: "Nova Social is a premium Web3 social app inspired by Twitter/X, Threads, Farcaster, and Lens Protocol. It combines wallet-based authentication, social interactions, NFT profiles, and IPFS media delivery with a polished startup-grade UI..",
     image: "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=800&q=80",
     github: "https://github.com/AhmadMDA/Web3-Project",
-    live: "#",
+    live: "http://localhost/decentralized-social-web3",
     features: [
     "Wallet authentication",
     "Create and share posts",

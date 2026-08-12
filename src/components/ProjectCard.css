@@ -71,6 +71,14 @@
   transform: scale(1.1);
 }
 
+.icon-btn-live {
+  background: var(--secondary);
+}
+
+.icon-btn-live:hover {
+  background: var(--primary);
+}
+
 .tech-stack {
   position: absolute;
   bottom: 12px;
@@ -162,9 +170,13 @@
 
 .project-links {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
   margin-top: 1rem;
+}
+
+.project-links > a:only-child {
+  grid-column: 1 / -1;
 }
 
 .project-links .btn {
@@ -173,6 +185,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -186,5 +200,9 @@
 
   .tech-stack {
     flex-wrap: wrap;
+  }
+
+  .project-links {
+    grid-template-columns: 1fr;
   }
 }

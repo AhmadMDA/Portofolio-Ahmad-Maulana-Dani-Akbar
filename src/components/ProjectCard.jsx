@@ -3,14 +3,24 @@ import { FiGithub, FiExternalLink, FiCode } from 'react-icons/fi';
 import './ProjectCard.css';
 
 export default function ProjectCard({ project }) {
+  const showCode = Boolean(project.github && project.github !== '#');
+  const showLive = Boolean(project.live && project.live !== '#');
+
   return (
     <div className="project-card">
       <div className="project-image">
         <img src={project.image} alt={project.title} />
         <div className="project-overlay">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="icon-btn">
-            <FiGithub size={24} />
-          </a>
+          {showCode && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="icon-btn" aria-label={`View ${project.title} code`}>
+              <FiGithub size={24} />
+            </a>
+          )}
+          {showLive && (
+            <a href={project.live} target="_blank" rel="noopener noreferrer" className="icon-btn icon-btn-live" aria-label={`Open ${project.title} live demo`}>
+              <FiExternalLink size={24} />
+            </a>
+          )}
         </div>
         <div className="tech-stack">
           {project.techs.slice(0, 3).map((tech, idx) => (
@@ -41,9 +51,16 @@ export default function ProjectCard({ project }) {
         </div>
 
         <div className="project-links">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{width: '100%'}}>
-            View Code
-          </a>
+          {showLive && (
+            <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <FiExternalLink size={16} /> Live Demo
+            </a>
+          )}
+          {showCode && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              <FiGithub size={16} /> View Code
+            </a>
+          )}
         </div>
       </div>
     </div>

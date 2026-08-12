@@ -49,6 +49,7 @@ export default function Footer() {
               <a href="https://www.instagram.com/mkbr_id/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram size={24} />
               </a>
+              
             </div>
           </div>
         </div>

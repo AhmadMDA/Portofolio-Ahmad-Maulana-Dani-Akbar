@@ -24,10 +24,58 @@
   margin: 0 auto;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+.projects-controls {
+  position: absolute;
+  inset: 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.nav-arrow {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.12);
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  pointer-events: auto;
+}
+
+.nav-arrow:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--secondary);
+}
+
+.projects-marquee {
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0 20px;
+  position: relative;
+}
+
+.projects-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+}
+
+.projects-track .project-card {
+  flex: 0 0 340px;
+  min-width: 320px;
 }
 
 @media (max-width: 768px) {
@@ -39,8 +87,17 @@
     font-size: 1.8rem;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .projects-controls {
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .projects-track {
+    gap: 16px;
+  }
+
+  .projects-track .project-card {
+    flex-basis: 82vw;
+    min-width: 82vw;
   }
 }
